@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Sign-up</title>
+</head>
+<body>
+    <div class="background_container">
+      
+        <div class="logo_container">
+            <h1>LOGO HERE!</h1>
+        </div>
+        <div class="footer_container">
+            <p>Photo by <a href="https://unsplash.com/@sanjay_koranga">Sanjan Koranga</a> on <a href="https://unsplash.com/">unsplash</a></p>
+        </div>
+    </div>
+    <div class="form_container">
+        <div class="form_container_header">
+            <h2> This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <i>now</i> to get started.</p></h2>
+            <h2>Lets do this!</h2>
+        </div>
+        <div class="form_container_input">
+            <form id="create_account" action="#" method = "post">
+                <div>
+                    <label for="first_name">First Name
+                        <input type="text" id="first_name" placeholder="Thor" name ="first_name" required>
+                    </label>
+
+                    <label for="last_name">Last Name
+                        <input type="text" id="last_name" placeholder="Odinson" name="last_name" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="email">*Email Adress
+                        <input type="email" id="email_address" placeholder="example@example123.com" name = "email_address" required>
+                    </label>
+                    <label for="phone_number">Phone Number
+                        <input type="phone_number" id="phone_number" placeholder="+63xxxxxxxxxx" name="phone_number" required pattern = "^(09\d{9})$">
+                    </label>
+                </div>
+                <div>
+                    <label for="user_password">*Password
+                        <input type="password" id="user_password" name="user_password" autocomplete="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                    </label>
+                    <label for="confirm_password">Confirm Password
+                        <input type="password" id="confirm_password" name="confirm_password" autocomplete="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                    </label>
+                </div>
+        </div>
+        <div class="form_container_footer">
+            <button type="submit" name = "submit">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+         </form>
+    </div>
+</body>
+</html>
+
+<! -- need to design submit button and  form_container_footer class, also need user_password and confirm_password to check if they are the same. 

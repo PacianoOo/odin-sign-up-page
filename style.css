@@ -111,7 +111,6 @@ input:invalid:not(:focus):not(:placeholder-shown) {
 }
 
 button {
-
     background-color: rgb(99, 99, 99);
     text-align: center;
     display: inline-block;
@@ -122,4 +121,10 @@ button {
 button:hover {
     background-color: #4CAF50; /* Green */
     color: white;
+}
+div .password[data-error]::after{
+    display: flex;
+    content:attr(data-error);
+    width: 180px;
+    font-size: 12px;
 }

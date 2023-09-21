@@ -33,7 +33,7 @@
                         <input type="text" id="last_name" placeholder="Odinson" name="last_name" required>
                     </label>
                 </div>
-                <div>
+                <div class="user_email" data-error = "Please Enter correct email">
                     <label for="email">*Email Adress
                         <input type="email" id="email_address" placeholder="example@example123.com" name = "email_address" required>
                     </label>
@@ -41,8 +41,8 @@
                         <input type="phone_number" id="phone_number" placeholder="+63xxxxxxxxxx" name="phone_number" required pattern = "^(09\d{9})$">
                     </label>
                 </div>
-                <div>
-                    <label for="user_password">*Password
+                <div class="password_checking">
+                    <label for="user_password" class ="password" data-error="Please include a lowercase, uppercase, symbol, and a number">Password
                         <input type="password" id="user_password" name="user_password" autocomplete="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
                     </label>
                     <label for="confirm_password">Confirm Password
@@ -56,7 +56,8 @@
         </div>
          </form>
     </div>
+    <script src = 'script.js'></script>
 </body>
 </html>
 
-<! -- need to design submit button and  form_container_footer class, also need user_password and confirm_password to check if they are the same. 
+<! -- javascript for password confirmation and error messages, and also error messages for the input forms
